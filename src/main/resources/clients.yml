@@ -36,13 +36,20 @@ paths:
       operationId: createClient
       tags:
         - clients
-      parameters:
-        - name: client
-          in: query
-          description: Some information about the created client
-          required: true
-          schema:
-            type: clientDTO
+#      parameters:
+#        - name: client
+#          in: query
+#          description: Some information about the created client
+#          required: true
+#          schema:
+#            type: clientDTO
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ClientDTO"
+        description: Body of new client
       responses:
         '201':
           description: Null response
