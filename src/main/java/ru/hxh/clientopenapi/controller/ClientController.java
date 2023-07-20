@@ -11,7 +11,7 @@ import ru.hxh.clientopenapi.service.Impl.ClientApiServiceImpl;
 import java.util.List;
 
 @RestController
-public class ClientApiController implements ClientsApi {
+public class ClientController implements ClientsApi {
 
     @Autowired
     ClientApiServiceImpl clientApiService;

@@ -87,7 +87,7 @@
 							<goal>generate</goal>
 						</goals>
 						<configuration>
-							<inputSpec>${project.basedir}/src/main/resources/clients.yml</inputSpec>
+							<inputSpec>${project.basedir}/src/main/resources/openapi/client-api.yml</inputSpec>
 							<modelPackage>ru.hxh.clientopenapi.api.model</modelPackage>
 							<apiPackage>ru.hxh.clientopenapi.api</apiPackage>
 <!--							<output>${project.build.directory}/generated-sources/swagger/</output>-->

@@ -13,7 +13,7 @@ import java.util.Objects;
 @Service
 public class ClientApiServiceImpl implements ClientApiService {
 
-    List<Client> db = new ArrayList<>();
+    private List<Client> db = new ArrayList<>();
 
     public List<ClientDTO> show() {
         if(db.isEmpty()) {
